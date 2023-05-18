@@ -5,6 +5,7 @@ import VisitedCountriesComponent from "./VisitedCountriesComponent";
 const CountriesContainer = () => {
 
     const [listOfCountries, setListOfCountries] = useState([]);
+    const [listofVisitedCountries, setListOfVisitedCountries] = useState([]);
 
     const fetchCountries = async () => {
         const response = await fetch("https://restcountries.com/v3.1/all")
@@ -24,7 +25,19 @@ const CountriesContainer = () => {
         fetchCountries();
     }, [])
 
-return (
+    
+    // const addCountryToList = (newCountry) => {
+    //     setListOfVisitedCountries([...listOfVisitedCountries, newCountry])
+
+    // }
+
+    // const visitedCountryComponents = listOfVisitedCountries.map((country) =>
+    
+    //     return <VisitedCountriesComponent country={country}/>
+    // })
+
+
+    return (
     <>
     <h3>Travel Bucket List</h3>
     <VisitedCountriesComponent/>

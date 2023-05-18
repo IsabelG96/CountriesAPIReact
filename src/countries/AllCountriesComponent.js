@@ -1,5 +1,7 @@
 
 const AllCountriesComponent = ({country}) => {
+
+
 return (
 
     // <h3>{country.name.common}</h3>
@@ -7,7 +9,7 @@ return (
     <>
     {/* <p>This is where I could go!</p> */}
     <li>{country.name.common} {country.flag}</li>
-    <button type="submit">Add to list</button>
+    <button>Add to list</button>
     </>
 
 );
