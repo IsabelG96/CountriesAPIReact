@@ -26,10 +26,10 @@ const CountriesContainer = () => {
     }, [])
 
     
-    // const addCountryToList = (newCountry) => {
-    //     setListOfVisitedCountries([...listOfVisitedCountries, newCountry])
+    const addNewCountry = (newCountry) => {
+        setListOfVisitedCountries([...listOfVisitedCountries, newCountry])
 
-    // }
+    }
 
     // const visitedCountryComponents = listOfVisitedCountries.map((country) =>
     

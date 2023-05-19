@@ -1,6 +1,13 @@
 
 const AllCountriesComponent = ({country}) => {
 
+    const handleCountryAddToList = () => {        
+            const newCountry = {
+    
+                countryName : country.name.common,
+                countryFlag : country.flag      
+            }
+            addNewCountry(newCountry) } 
 
 return (
 
@@ -9,8 +16,9 @@ return (
     <>
     {/* <p>This is where I could go!</p> */}
     <li>{country.name.common} {country.flag}</li>
-    <button>Add to list</button>
+    <button onClick={handleCountryAddToList}>Add to list</button>
     </>
+
 
 );
 }
